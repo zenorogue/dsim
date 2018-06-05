@@ -1,4 +1,4 @@
 # dsim
-Die simulator with basins of attraction.
+This program creates paintings by rolling dice.
 
 See it in action at: http://roguetemple.com/z/sims/dsim.html
