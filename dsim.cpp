@@ -101,7 +101,7 @@ bool infront(vec3 m) {
 
 void setpix(int x, int y, color col) {
 #ifdef EMSCRIPTEN
-  *((Uint32*)emscreen->pixels + y * (SX + ADD) + x) = SDL_MapRGBA(screen.s->format, part(col,0), part(col,1), part(col,2), 255);
+  *((Uint32*)emscreen->pixels + y * (SX + ADD) + x) = SDL_MapRGBA(screen.s->format, part(col,2), part(col,1), part(col,0), 255);
 #else
   screen[y][x] = col;
 #endif
